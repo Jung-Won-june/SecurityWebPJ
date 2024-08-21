@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS2</title>
+<style type="text/css">
+<!--
+	div h2, h1{
+		color : red;
+		
+	}
+-->
+</style>
+</head>
+<body>
+	<div>
+		<h2>하하</h2>
+	</div>
+	<h2>호호</h2>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	</head>
+	<body>
+		<form name="first_form" method="GET" action="http://www.freelec.co.kr">
+			ID : <input type="text"/><br/>
+		</form>
+		<form name="second_form" method="POST" action="http://www.freelec.co.kr">
+			PW : <input type="password"/><br/>
+		</form>
+	</body>
+</html>

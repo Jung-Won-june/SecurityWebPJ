@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+<!--
+	function aaa(x,y){
+		try{
+			var z = parseInt(x)+parseInt(y);
+			document.write("res = " + z);
+		}catch(e){alert('error!');}
+}
+//-->
+</script>
+</head>
+<body>
+<script>
+	aaa(10,20);
+	aaa(10);
+</script>
+
+</body>
+</html>

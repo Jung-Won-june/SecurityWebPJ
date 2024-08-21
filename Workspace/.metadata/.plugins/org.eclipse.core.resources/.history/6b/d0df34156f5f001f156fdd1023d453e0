@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			fuction first_func(){
+				alert('경고입니다.');
+			}
+			function second_func(){
+				var res = confirm('맞습니까?');
+				alert('결과는'+res+'입니다.');
+			}
+			funciton third_func(){
+				var res = prompt('나이는?');
+				alert('당신의 나이는'+res+'세 입니다.');
+			}
+		</script>
+	</head>
+	<body>
+		내장 함수 실행입니다.<br/>
+		<script>
+			first_func();
+			second_func();
+			third_func();
+		</script>
+	</body>
+</html>

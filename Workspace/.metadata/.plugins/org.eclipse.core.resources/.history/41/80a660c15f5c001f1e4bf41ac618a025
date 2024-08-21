@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS 1단계</title>
+	</head>
+	<body>
+		<p align="center">TEST</p>
+		<p align="right">TEST</p>
+		<span>TEST3</span>
+	</body>
+</html>

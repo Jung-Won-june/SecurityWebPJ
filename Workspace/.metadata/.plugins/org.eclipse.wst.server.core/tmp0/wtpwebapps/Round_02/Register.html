@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>제목!!</title>
+		<script language="javascript">
+			function checkForm(){
+				var name = myform.name.value;
+				var id = myform.id.value;
+				var pw = myform.pw.value;
+				if(name == null || name.length==0){
+					alert("이름이 비었습니다.");
+					return false;
+				}
+				return true;
+			}
+		</script>
+	</head>
+	<body>
+		<form name="myform" method="get" action="register.jsp" onsubmit="return checkForm()">
+			Name : <input type="text" name="name"/><br/>
+			ID : <input type="text" name="id"/><br/>
+			PW : <input type="password" name="pw"/><br/>
+			<input type="submit" value="가입"/>
+		</form>
+	</body>
+</html>

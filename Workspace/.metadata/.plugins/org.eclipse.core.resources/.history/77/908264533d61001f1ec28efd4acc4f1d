@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>login</title>
+<style type="text/css">
+	<!--
+		.formlogin{
+			position: absolute;
+			top:50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		input{
+			border: 1px solid black;
+		}
+		.signup-button{
+			font-size: 11px;
+			color: #555555;
+			text-decoration: none;
+		}
+	-->
+</style>
+</head>
+<body>
+	<form class="formlogin" name="login" method="POST" action="http://192.168.0.2">
+	<input type="text" placeholder="E-mail"/><br/>
+	<input type="password" placeholder="pw"/>
+	<input type="submit" value="전송" width="20" height="20"/><br/>
+	<a href="/Apachewebsite_01/signup.html" class="signup-button">회원가입</a>
+	</form>
+</body>
+</html>

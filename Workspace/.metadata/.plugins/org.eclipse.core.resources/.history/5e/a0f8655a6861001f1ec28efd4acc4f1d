@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>login</title>
+<style type="text/css">
+	<!--
+		.formlogin{
+			position: absolute;
+			top:50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		input{
+			border: 1px solid white;
+		}
+		body{
+			background-color: black;
+		}
+		.signup-button{
+			font-size: 12px;
+			color: #ffffffff;
+			text-decoration: none;
+		}
+		
+		#lock-container {
+  			background-color: black;
+  			height: 100vh;
+  			display: flex;
+  			justify-content: center;
+  			align-items: center;
+		}
+		#lock {
+		  position: relative;
+		  font-size: 100px;
+		  color: white;
+		}
+		
+		#lock .fa-lock {
+		  z-index: 2;
+		  position: relative;
+		}
+		
+		#lock .fa-key {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%) rotate(0deg);
+		  opacity: 0;
+		  transition: transform 1s ease, opacity 0.5s ease;
+		}
+		
+		.unlocked .fa-key {
+		  opacity: 1;
+		  transform: translate(-50%, -50%) rotate(90deg);
+		}
+		
+		.unlocked .fa-lock {
+		  opacity: 0;
+		  transition: opacity 0.5s ease;
+		}
+	-->
+</style>
+</head>
+<body>
+	<form class="formlogin" name="login" method="POST" action="http://192.168.0.2">
+	<input type="text" placeholder="E-mail"/><br/>
+	<input type="password" placeholder="pw"/>
+	<input type="submit" value="전송" width="20" height="20"/><br/>
+	<a href="/Apachewebsite_01/signup.html" class="signup-button">회원가입</a>
+	</form>
+	
+	<div id="lock-container">
+  		<div id="lock">
+    		<i class="fa fa-lock"></i> <!-- 자물쇠 아이콘 -->
+    		<i class="fa fa-key"></i> <!-- 열쇠 아이콘 -->
+  		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>login</title>
+	</head>
+	<body>
+		<form name="login" method="POST" action="http://192.168.0.2">
+			<input type="text" placeholder="E-mail"/>
+			<input type="password" placeholder="pw"/>
+			<input type="submit" value="전송"/>
+			<a href="/signup" class="signup-button">회원가입</a>
+		</form>
+	</body>
+</html>

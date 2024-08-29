@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animation Test</title>
+		<style type="text/css">
+			<!--
+			
+				body{
+					overflow: hidden;
+				}
+				
+				.animated_image {
+				    width:110px;
+				    height:100px;
+				    animation: moveImage 5s linear infinite;
+				}
+				
+				@keyframes moveImage{
+					0%{
+						transform: translateX(-100px);
+					}
+					100%{
+						transform: translateX(1500px);
+					}
+				}
+			-->
+		</style>
+</head>
+<body>
+	<img src="image/profile.png" alt="Animated Image" class="animated_image">
+</body>
+</html>

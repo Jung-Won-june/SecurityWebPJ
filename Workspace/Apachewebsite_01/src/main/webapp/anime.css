@@ -1,0 +1,31 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* 스크롤바를 숨김 */
+    position: relative; /* 자식 요소의 절대 위치를 위한 설정 */
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%; /* 배경을 화면의 두 배 너비로 설정 */
+    height: 100%;
+    background-size: cover; /* 이미지가 컨테이너를 덮도록 설정 */
+    background-repeat: repeat-x; /* 가로 방향으로만 반복 */
+    background-position: 0 0; /* 배경 이미지의 초기 위치 */
+    animation: scrollBackground 20s linear infinite; /* 애니메이션 설정 */
+}
+@keyframes scrollBackground {
+    0% {
+        background-position: 0 0; /* 애니메이션 시작 위치 */
+    }
+    100% {
+        background-position: -100% 0; /* 애니메이션 끝 위치 (왼쪽으로 이동) */
+    }
+}
+
+/* 배경 이미지들을 순차적으로 설정 */
+.background {
+    background-image: url('image/profile.jpg'), url('image/프로필반전.jpg'); /* 여러 이미지 설정 */
+}

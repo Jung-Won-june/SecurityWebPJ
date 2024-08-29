@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	<!--
+		/*
+			class Person{
+				String name;
+				int age;
+				public Person(String name, int age){
+					this.name = name;
+					this.age = age;
+				}
+				public void disp(){
+					System.out.println(name+"의 나이는"+age);
+				}
+		}
+		Person p1 = new Person("김승현",20);
+		*/
+			function Person(name, age){
+				this.name = name;
+				this.age = age;
+				this.disp = display;
+			}
+			function display(){
+				document.write(this.name+"의 나이는"+this.age);
+			}
+	//-->
+</script>
+</head>
+<body>
+	<script>
+		var p1 = new Person("김승현",10);
+		p1.disp();
+		var p2 = new Person("정원준", 20);
+		p2.disp();
+	</script>
+</body>
+</html>

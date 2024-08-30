@@ -3,32 +3,85 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Animation Test</title>
+	<title>Login</title>
 		<style type="text/css">
 			<!--
-			
-				body{
-					overflow: hidden;
+				.formlogin{
+					position: absolute;
+					top:50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
 				}
 				
+				input{
+					border: 1px solid white;
+				}
+				
+				.signup-button{
+					font-size: 12px;
+					color: #ffffffff;
+					text-decoration: none;
+				}
+				
+				body{
+					overflow: hidden;
+					background-color: black;
+				}
+				
+				.image_container{
+					display: flex;
+				}
+				
+				.image_container2{
+					display: flex;
+					position: absolute;
+					bottom: 15px;
+				}
 				.animated_image {
-				    width:110px;
-				    height:100px;
-				    animation: moveImage 5s linear infinite;
+				    max-width:120%;
+				    height:auto;
+				    margin: 0;
+    				padding: 0;
+				    animation: moveImage 33s linear infinite;
+				}
+				
+				.secondary_image{
+					max-width:120%;
+					height:auto;
+					margin: 0;
+    				padding: 0;
+					animation: secondImage 33s linear infinite;
 				}
 				
 				@keyframes moveImage{
-					0%{
-						transform: translateX(-100px);
-					}
-					100%{
-						transform: translateX(1500px);
-					}
+				
+					0% { transform: translateX(-5%); }
+					50% { transform: translateX(-105%); }
+					50.01% { transform: translateX(95%); }
+					100% { transform: translateX(-5%); }
+				}
+				
+				@keyframes secondImage{
+					0% { transform: translateX(-5%); }
+					100% { transform: translateX(-205%); }
 				}
 			-->
 		</style>
 </head>
 <body>
-	<img src="image/profile.png" alt="Animated Image" class="animated_image">
+	<div class="image_container">
+		<img src="image/banner1.png" alt="Animated Image" class="animated_image">
+		<img src="image/banner2.png" alt="Animated Image" class="secondary_image">
+	</div>
+	<form class="formlogin" name="login" method="POST" action="http://192.168.0.2">
+		<input type="text" placeholder="E-mail"/><br/>
+		<input type="password" placeholder="pw"/>
+		<input type="submit" value="전송"/><br/>
+		<a href="/Apachewebsite_01/signup.html" class="signup-button">회원가입</a>
+	</form>
+	<div class="image_container2">
+		<img src="image/banner2.png" alt="Animated Image" class="animated_image">
+		<img src="image/banner1.png" alt="Animated Image" class="secondary_image">
+	</div>
 </body>
 </html>
